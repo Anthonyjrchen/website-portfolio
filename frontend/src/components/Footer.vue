@@ -11,5 +11,7 @@ import { Icon } from '@iconify/vue'
             Handcrafted by me <Icon class="ml-[4px] mr-[4px]" icon="solar:copyright-linear" width="20" height="20" />
             Anthony Chen, 2025
         </div>
+        <div class="text-xs text-dark-white mt-[15px] flex flex-row">
+            Made with <Icon class="ml-[4px] mr-[4px]" icon="logos:vue" width="20" height="20" /> Vue.JS        </div>
         </div>
 </template>
