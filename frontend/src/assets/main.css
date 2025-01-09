@@ -1,7 +1,6 @@
 @import './base.css';
 
 #app {
-  margin: 0 auto;
   font-weight: normal;
 }
 
@@ -31,4 +30,42 @@
 .nameCardTitle {
   /* font-family:'Courier New', Courier, monospace; */
   font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.skillWrap {
+  margin-bottom: 15px;
+}
+
+.experienceCard {
+  display: flex;
+  gap:30px;
+  margin-bottom:30px;
+}
+
+.infoSection {
+  width:150px
+}
+
+.infoSectionSeperator {
+  background-color: white;
+  height:1px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width:100%;
+}
+
+.textSection {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  padding-top:10px;
+}
+
+.messageWrap {
+  width:calc(100vw - 17px);
+  height:500px;
+  background-color: #418071;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

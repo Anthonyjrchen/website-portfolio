@@ -1,6 +1,13 @@
+<script setup>
+import resume from '../assets/resume.pdf'
+import pdfjsDist from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/+esm'
+
+</script>
 <template>
 <div class="resume">
-    <h1>This is the resume page</h1>
+    <div>
+        <iframe id="pdf-js-viewer" :src="resume" title="webviewer" frameborder="0" width="700" style="height:80vh"></iframe>
+    </div>
 </div>
 </template>
 

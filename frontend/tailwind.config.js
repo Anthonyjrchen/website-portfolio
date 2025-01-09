@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark-white': '#52525b',
+        'dark-white': '#cccccc',
         'dark-gray': '#121212',
 
         //teal/light blue palette

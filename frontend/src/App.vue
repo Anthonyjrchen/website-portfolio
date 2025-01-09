@@ -19,7 +19,8 @@ import Navbar from './components/Navbar.vue'
 .routerView {
   display:flex;
   justify-content: center;
-  padding: 15px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .navbarWrapper {
