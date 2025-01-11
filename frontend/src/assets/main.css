@@ -69,3 +69,40 @@
   justify-content: center;
   align-items: center;
 }
+
+.carousel {
+  width:calc(100vw - 17px);
+  height:500px;
+  background-color:bisque;
+  display:flex;
+  align-items: center;
+  
+}
+
+.carousel button {
+  /* height:25px;
+  width:10px; */
+  background-color:#454444;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+
+.splideWrap {
+  width:calc(100vw - 17px);
+  padding:0;
+}
+
+.splide {
+  margin:0 !important;
+  width: 100% !important;
+  padding:0 !important;
+}
+
+.splideTrack {
+  width:100% !important;
+  margin:0 !important;
+}
+
+.splideIMG {
+  width: 100%;
+}

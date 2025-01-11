@@ -7,11 +7,11 @@ import { Icon } from '@iconify/vue'
         <div class="w-[60px] h-[60px] mt-[15px] mb-[15px]">
             <img :src="logo" alt="logo" class="w-full h-full object-contain " />
         </div>
-        <div class="flex flex-rowtext-center text-dark-white items-center">
+        <div class="flex flex-rowtext-center text-dark-white items-center text-center">
             Handcrafted by me <Icon class="ml-[4px] mr-[4px]" icon="solar:copyright-linear" width="20" height="20" />
             Anthony Chen, 2025
         </div>
-        <div class="text-xs text-dark-white mt-[15px] flex flex-row">
+        <div class="text-xs text-dark-white mt-[15px] flex flex-row text-center">
             Made with <Icon class="ml-[4px] mr-[4px]" icon="logos:vue" width="20" height="20" /> Vue.JS        </div>
         </div>
 </template>

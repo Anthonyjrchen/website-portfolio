@@ -11,9 +11,6 @@ import logo from "./icons/AClogo_white.png"
 import logoText from "./icons/AnthonyChen_text_transparent.png"
 
 const currentMenu = ref('')
-const checkboxOne = ref(false)
-const checkboxTwo = ref(false)
-const person = ref('pedro')
 function handleClick() {
   // eslint-disable-next-line no-alert
   alert('hello!')

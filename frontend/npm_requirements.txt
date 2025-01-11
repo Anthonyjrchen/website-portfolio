@@ -1,0 +1,4 @@
+npm install
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npm add radix-vue
+npm install @splidejs/vue-splide
