@@ -18,7 +18,7 @@ export default {
         'light-blue': '#B0E0E6',
         'powder-blue': '#AFEEEE',
         'sky-blue': '#87CEEB',
-
+        'random-gray': '#454444',
         'sidebar-gray': '#18181a',
         'persimmon': '#fe5757',
         'text-box': '#0a0b0b',

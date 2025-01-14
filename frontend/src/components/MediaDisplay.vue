@@ -23,14 +23,17 @@ const options = ref({
     <div class="splideWrap m-0">
         <Splide class="splide" :options="options" :has-track="false" aria-label="My Favorite Images">
             <div style="position: relative">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev bg-random-gray">
+                        <Icon icon="eva:arrowhead-right-fill" width="24" height="35" />
+                    </button>
+                    <button class="splide__arrow splide__arrow--next bg-random-gray">
+                        <Icon icon="eva:arrowhead-right-fill" width="24" height="24" />
+                    </button>
+                </div>
                 <SplideTrack class="splideTrack">
                     <SplideSlide>
                         <img :src="vballTeam" alt="" class="">
-                    </SplideSlide>
-                    <SplideSlide>
-                        <video autoplay controls="controls" width="100%" name="Serve">
-                            <source :src="serve">
-                        </video>
                     </SplideSlide>
                     <SplideSlide>
                         <img :src="park" alt="" class="">

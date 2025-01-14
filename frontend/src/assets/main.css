@@ -79,7 +79,7 @@
   
 }
 
-.carousel button {
+.splide__arrow {
   /* height:25px;
   width:10px; */
   background-color:#454444;
@@ -101,6 +101,7 @@
 .splideTrack {
   width:100% !important;
   margin:0 !important;
+  color:white;
 }
 
 .splideIMG {
