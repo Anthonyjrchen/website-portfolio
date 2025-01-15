@@ -4,6 +4,9 @@ import AboutView from '../views/AboutView.vue'
 import ContactView from '../views/ContactView.vue'
 import WorksView from '../views/WorksView.vue'
 import ResumeView from '../views/ResumeView.vue'
+import WorksAnniversary from '@/views/works/WorksAnniversary.vue'
+import WorksDAhandler from '@/views/works/WorksDAhandler.vue'
+import WorksPortfolio from '@/views/works/WorksPortfolio.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +25,20 @@ const router = createRouter({
       path: '/works',
       name: 'works',
       component: WorksView,
+      children: [
+        {
+          path:'portfolio',
+          component: WorksPortfolio
+        },
+        {
+          path:'DAhandler',
+          component:WorksDAhandler
+        },
+        {
+          path:'anniversary',
+          component:WorksAnniversary
+        },
+      ],
     },
     {
       path: '/contact',

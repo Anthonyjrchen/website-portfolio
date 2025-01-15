@@ -11,10 +11,6 @@ import logo from "./icons/AClogo_white.png"
 import logoText from "./icons/AnthonyChen_text_transparent.png"
 
 const currentMenu = ref('')
-function handleClick() {
-  // eslint-disable-next-line no-alert
-  alert('hello!')
-}
 </script>
 
 <template>
@@ -46,7 +42,7 @@ function handleClick() {
           <MenubarTrigger
             class="MenubarTrigger py-2 px-3 outline-none select-none leading-none rounded text-[20px] text-white flex items-center justify-between gap-[2px]"
           >
-          <RouterLink to="/works">works</RouterLink>
+          <RouterLink to="/works/portfolio">works</RouterLink>
           </MenubarTrigger>
           <MenubarTrigger
             class="MenubarTrigger py-2 px-3 outline-none select-none leading-none rounded text-[20px] text-white flex items-center justify-between gap-[2px]"

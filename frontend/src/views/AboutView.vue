@@ -2,6 +2,7 @@
   import Carousel from '../components/MediaDisplay.vue'
   import aboutBackground from '../components/media/aboutBackground.jpg'
   import aboutInternship from '../components/media/astriACS.jpg'
+  import serve from '../components/media/volleyballServe.mov'
   import Footer from '../components/Footer.vue'
   import { onMounted } from 'vue'
 
@@ -68,10 +69,13 @@ To enhance security, I implemented JWT authentication for token-based authorizat
               The people I have met from volleyball and the experiences and challenges 
               that I have overcome have shaped me as a person. I value team work, cooperation, 
               and improvement above all else. I find that I keep encountering new unseen challenges,
-              but I accept the things I don't know and focus on adapting to new environments to improve.
+              but I manage to adapat to new environments to continuously learn and improve myself.
             </p>
           </div>
-          <img :src="aboutPassion" class="ml-auto w-[600px] h-[420px] rounded-md shadow-random-gray shadow-sm z-30" />
+          <!-- <img :src="aboutPassion" class="ml-auto w-[600px] h-[420px] rounded-md shadow-random-gray shadow-sm z-30" /> -->
+          <video controls="controls" name="Video Name">
+            <source :src="serve">
+          </video>
         </div>
       </div>
       <Footer class="mt-[40px]"/>
