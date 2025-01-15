@@ -107,3 +107,37 @@
 .splideIMG {
   width: 100%;
 }
+
+/* .circle {
+  position: absolute;
+  top: 600px;
+  right:0px;
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+  background-color: #418071;
+  z-index: 0;
+} */
+
+@keyframes aboutcard-animation {
+	0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.card-animation {
+  animation: aboutcard-animation 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.aboutCard {
+  display:flex;
+  flex-direction: row;
+  opacity: 0;
+}
