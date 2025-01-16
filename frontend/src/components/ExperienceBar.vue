@@ -41,7 +41,7 @@ import { Separator } from 'radix-vue';
             </div>
         </div>
         <div class="textSection">
-            <h1 class="nameCardTitle text-xl">Bachelor Degree in Cogntiive Systems</h1>
+            <h1 class="nameCardTitle text-xl">Bachelor Degree in Cogntive Systems</h1>
             <p class="w-[600px]">For clarification, Cognitive Systems is an interdisciplinary
                  major that combines computer science, psychology, and philosophy. While the 
                  program primarily focuses on artificial intelligence, I developed an 
