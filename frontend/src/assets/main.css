@@ -201,7 +201,7 @@
 
 .fadeIn {
   opacity: 0;
-  animation: fadeInAnimation 1.5s;
+  animation: fadeInAnimation 1s;
   animation-fill-mode: forwards;
   animation-delay:3s;
 }
@@ -209,7 +209,12 @@
 .fadeIn2 {
   animation: fadeInAnimation 1s;
   animation-fill-mode: forwards;
-  animation-delay:1s;
+  animation-delay: 1s;
+}
+
+.fadeOut {
+  animation: fadeOutAnimation 1s;
+  animation-fill-mode: forwards;
 }
 
 .slide-in-left {
@@ -269,13 +274,13 @@
 }
 
 .introText1 {
-  animation: fadeOutAnimation ease 1s;
+  animation: fadeOutAnimation ease 0.5s;
   animation-fill-mode: forwards;
   animation-delay:2s;
 }
 
 .introText2 {
-  animation: fadeOutAnimation ease 1s;
+  animation: fadeOutAnimation ease 0.5s;
   animation-fill-mode: forwards;
-  animation-delay:2.5s;
+  animation-delay:2.25s;
 }

@@ -42,7 +42,7 @@ const currentMenu = ref('')
           <MenubarTrigger
             class="MenubarTrigger py-2 px-3 outline-none select-none leading-none rounded text-[20px] text-white flex items-center justify-between gap-[2px]"
           >
-          <RouterLink to="/works/portfolio">works</RouterLink>
+          <RouterLink to="/works">works</RouterLink>
           </MenubarTrigger>
           <MenubarTrigger
             class="MenubarTrigger py-2 px-3 outline-none select-none leading-none rounded text-[20px] text-white flex items-center justify-between gap-[2px]"

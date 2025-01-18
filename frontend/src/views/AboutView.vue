@@ -73,7 +73,7 @@ To enhance security, I implemented JWT authentication for token-based authorizat
             </p>
           </div>
           <!-- <img :src="aboutPassion" class="ml-auto w-[600px] h-[420px] rounded-md shadow-random-gray shadow-sm z-30" /> -->
-          <video controls="controls" name="Video Name">
+          <video controls="controls" name="Video Name" class="ml-auto">
             <source :src="serve">
           </video>
         </div>

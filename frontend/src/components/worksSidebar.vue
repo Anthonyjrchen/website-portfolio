@@ -19,7 +19,11 @@ onMounted(()=>{
 
 onBeforeRouteUpdate(async (to,from)=> {
     document.getElementById(to.fullPath.split("/")[2]).disabled=true;
-    document.getElementById(from.fullPath.split("/")[2]).disabled=false;
+    try {
+        document.getElementById(from.fullPath.split("/")[2]).disabled=false;
+    } catch (error) {
+        
+    }    
 })
 
 </script>
@@ -35,7 +39,7 @@ onBeforeRouteUpdate(async (to,from)=> {
                 <div class="flex flex-col items-center">
                     <NavigationMenuList>
                         <NavigationMenuItem>
-                            <RouterLink to="/works/portfolio">
+                            <RouterLink to="/works/portfolio" @mouseenter="$emit('portfolio')">
                                 <NavigationMenuTrigger
                                     id="portfolio" class="sidebarTrigger flex flex-row items-center gap-[10px] py-2 px-3 outline-none select-none leading-none rounded text-[20px]"
                                 >
@@ -47,7 +51,7 @@ onBeforeRouteUpdate(async (to,from)=> {
                             </RouterLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <RouterLink to="/works/DAhandler">
+                            <RouterLink to="/works/DAhandler" @mouseenter="$emit('DAhandler')">
                                 <NavigationMenuTrigger
                                     id="DAhandler" class="sidebarTrigger flex flex-row items-center gap-[10px] py-2 px-3 outline-none select-none leading-none rounded text-[20px]"
                                     >
@@ -59,7 +63,7 @@ onBeforeRouteUpdate(async (to,from)=> {
                             </RouterLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <RouterLink to="/works/anniversary">
+                            <RouterLink to="/works/anniversary" @mouseenter="$emit('anniversary')">
                                 <NavigationMenuTrigger
                                     id="anniversary" class="sidebarTrigger flex flex-row items-center gap-[10px] py-2 px-3 outline-none select-none leading-none rounded text-[20px]"
                                 >
@@ -69,26 +73,6 @@ onBeforeRouteUpdate(async (to,from)=> {
                                     <!-- </button> -->
                                 </NavigationMenuTrigger>
                             </RouterLink>
-                        </NavigationMenuItem>
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger
-                                class="sidebarTrigger py-2 px-3 outline-none select-none leading-none rounded text-[20px]"
-                            >
-                                <button class="flex flex-row items-center gap-[10px]" v-on:click="seeCurrent()">
-                                    <Icon icon="gg:website" width="24" height="24" />
-                                    <h1 class="nameCardTitle">Portfolio</h1>
-                                </button>
-                            </NavigationMenuTrigger>
-                        </NavigationMenuItem>
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger
-                                class="sidebarTrigger py-2 px-3 outline-none select-none leading-none rounded text-[20px]"
-                            >
-                                <button class="flex flex-row items-center gap-[10px]" v-on:click="seeCurrent()">
-                                    <Icon icon="gg:website" width="24" height="24" />
-                                    <h1 class="nameCardTitle">Portfolio</h1>
-                                </button>
-                            </NavigationMenuTrigger>
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </div>  
