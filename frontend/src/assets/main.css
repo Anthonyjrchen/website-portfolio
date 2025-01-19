@@ -183,6 +183,30 @@
   }
 }
 
+@keyframes appearSide {
+  from {
+    opacity: 0;
+    transform:scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform:scaleX(1);
+  }
+}
+
+@keyframes disappearSide {
+  to {
+    opacity: 0;
+    transform:scaleX(0);
+  }
+
+  from {
+    opacity: 1;
+    transform:scaleX(1);
+  }
+}
+
 @keyframes slide-in-left {
   100% { transform: translateX(0%); }
 }
@@ -283,4 +307,27 @@
   animation: fadeOutAnimation ease 0.5s;
   animation-fill-mode: forwards;
   animation-delay:2.25s;
+}
+
+.worksSeparator {
+  height:4px;
+  background-color: white;
+  width:1200px;
+  border-radius: 5px;
+}
+
+.visitSourceCode {
+  height:1px;
+  background-color: white;
+  width:100px;
+}
+
+.appearSideway {
+  animation: appearSide 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.disappearSideway {
+  animation: disappearSide 0.5s;
+  animation-fill-mode: forwards;
 }

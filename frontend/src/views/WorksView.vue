@@ -4,12 +4,18 @@ import portfolioSnapshot from '../components/media/portfolioSnapshot.png'
 import DAhandlerSnapshot from '../components/media/DAhandlerSnapshot.png'
 import anniversarySnapshot from '../components/media/anniversarySnapshot.png'
 import { RouterView, useRoute, onBeforeRouteUpdate } from 'vue-router';
-import { ref, Transition } from 'vue';
-const displayImage=ref(portfolioSnapshot);
+import { onMounted, ref, Transition } from 'vue';
+const displayImage=ref();
 const showWorks = ref(false);
 function changeImage(e) {
     displayImage.value = e;
 }
+
+onMounted(()=>{
+    if(useRoute().fullPath != '/works') {
+        showWorks.value = true;
+    }
+});
 
 onBeforeRouteUpdate(async (to,from)=> {
     if(from.path=='/works') {
@@ -18,13 +24,13 @@ onBeforeRouteUpdate(async (to,from)=> {
             showWorks.value = true;
         },1000);
     }
-})
+});
 
 </script>
 <template>
 <div class="works">
     <Transition v-if="!showWorks">
-        <div id="initialDisplay" class="flex flex-row gap-[150px]">
+        <div id="initialDisplay" class="flex flex-row gap-[100px]">
             <Sidebar class="ml-[120px]" @DAhandler="changeImage(DAhandlerSnapshot)" @portfolio="changeImage(portfolioSnapshot)" @anniversary="changeImage(anniversarySnapshot)"/>
             <img id="displayImage" :src="displayImage" width="1200" class="rounded-[50px] shadow-sidebar-gray shadow-md">
         </div>
