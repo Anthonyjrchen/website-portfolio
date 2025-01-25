@@ -34,7 +34,7 @@ onMounted(()=>{
   <NameCard class="nameCard slide-in-right absolute top-10 z-10"/>
   <WelcomeMessage class="welcomeMessage" />
   <div class="grid grid-cols-[500px,1fr] mt-[40px]">
-    <div class="homeElem transform translate-x-[300%] text-white p-4"><SkillsBar /></div>
+    <div class="homeElem1 opacity-0 text-white p-4"><SkillsBar /></div>
     <div class="homeElem1 opacity-0 text-white p-4"><ExperienceBar /></div>
   </div>
   <Footer />

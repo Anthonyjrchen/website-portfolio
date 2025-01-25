@@ -1,6 +1,7 @@
 <script setup>
 import { ProgressIndicator, ProgressRoot } from 'radix-vue'
 import { onMounted, ref } from 'vue'
+import { Icon } from '@iconify/vue'
 const progressValue1 = ref(0)
 const progressValue2 = ref(0)
 const progressValue3 = ref(0)
@@ -17,7 +18,7 @@ function setProgress() {
     progressValue1.value = 95
     progressValue2.value = 90
     progressValue3.value = 75
-    progressValue4.value = 60
+    progressValue4.value = 80
     progressValue5.value = 85
     progressValue6.value = 70
 }
@@ -25,8 +26,14 @@ function setProgress() {
 
 <template>
     <div class="flex flex-col">
-        <h1 class="nameCardTitle text-4xl mb-[50px]">Skills</h1>
-        <div class="skillWrap">
+        <h1 class="nameCardTitle text-4xl mb-[50px]">Contacts</h1>
+        <div class="nameCardTitle text-2xl flex flex-row items-center gap-[10px]">
+            <Icon icon="clarity:email-line" />: anthonyjrchen@gmail.com
+        </div>
+        <div class="nameCardTitle text-2xl flex flex-row items-center gap-[10px]">
+            <Icon icon="mdi-light:phone" />: +1(604)616-5371
+        </div>
+        <!-- <div class="skillWrap">
             <h1>Python</h1>
             <ProgressRoot
                 v-model="progressValue1"
@@ -103,7 +110,7 @@ function setProgress() {
                 :style="`transform: translateX(-${100 - progressValue6}%)`"
                 />
             </ProgressRoot>
-        </div>
+        </div> -->
     </div>
 </template>
 <style scoped>

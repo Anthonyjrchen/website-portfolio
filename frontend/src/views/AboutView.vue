@@ -29,7 +29,7 @@
       <Carousel />
       <div class="aboutContent pt-[90px] pl-[120px] pr-[120px] flex flex-col gap-[100px]">
         <div class="aboutCard">
-          <div class="flex flex-col w-[600px]">
+          <div class="flex flex-col w-[800px]">
             <h1 class="nameCardTitle text-4xl">My Background</h1>
             <p class="text-xl mt-[10px]">
               I was born and raised in Hong Kong until I came to Canada to 
@@ -49,7 +49,7 @@
         </div>
         <div class="aboutCard">
           <img :src="aboutInternship" class="w-[600px] h-[420px] rounded-md shadow-random-gray shadow-sm">
-          <div class="flex flex-col ml-auto w-[600px]">
+          <div class="flex flex-col ml-auto w-[800px]">
             <h1 class="nameCardTitle text-4xl">Internship</h1>
             <p class="text-xl mt-[10px]">As you can see from my resume, I completed an internship at Hong Kong's ASTRI. I was placed in the Advanced Crypto Division, where I worked with a team developing a secure data trading platform. While the team had professionals handling the cryptography aspect of the platform, they lacked a functional web platform.
 
@@ -60,7 +60,7 @@ To enhance security, I implemented JWT authentication for token-based authorizat
           </div>
         </div>
         <div class="aboutCard">
-          <div class="flex flex-col w-[600px]">
+          <div class="flex flex-col w-[800px]">
             <h1 class="nameCardTitle text-4xl">Passions</h1>
             <p class="text-xl mt-[10px]">
               Volleyball has been my biggest passion for years. I started it when

@@ -41,11 +41,6 @@ const router = createRouter({
       ],
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: ContactView,
-    },
-    {
       path: '/resume',
       name: 'resume',
       component: ResumeView,

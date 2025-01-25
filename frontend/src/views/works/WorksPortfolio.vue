@@ -17,12 +17,12 @@ function startDisappear() {
 </script>
 <template>
     <div class="portfolioWrap flex flex-col items-center justify-center">
-        <img :src="portfolio" class="shadow-sidebar-gray shadow-sm w-[70vw]">
-        <div class="text-5xl nameCardTitle mt-[50px] w-[1200px] text-light-teal">
+        <img :src="portfolio" class="shadow-sidebar-gray shadow-sm w-[70vw] rounded-[50px]">
+        <div class="text-5xl nameCardTitle mt-[50px] w-[70vw] text-light-teal">
             Portfolio page
         </div>
         <Separator class="worksSeparator mt-[15px]"/>
-        <div class="infoSection flex flex-row w-[1200px]">
+        <div class="infoSection flex flex-row w-[70vw]">
             <table class="mt-[20px]">
                 <tbody>
                     <tr class="h-[80px]">

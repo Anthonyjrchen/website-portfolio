@@ -25,15 +25,17 @@ onBeforeRouteUpdate(async (to,from)=> {
             showWorks.value = true;
         },1000);
     }
-    // if(to.path=='/works') {
-    //     try {
-    //         showWorks.value = false;
-    //         document.getElementById('initialDisplay').classList.remove('fadeOut');
-    //     } catch {
+    if(to.path=='/works') {
+        console.log("Entering works");
+        window.location.href="http://localhost:5173/works";
+        // try {
+        //     showWorks.value = false;
+        //     document.getElementById('initialDisplay').classList.remove('fadeOut');
+        // } catch {
 
-    //     }
-    //     document.getElementById('initialDisplay').classList.add('fadeIn2');
-    // }
+        // }
+        // document.getElementById('initialDisplay').classList.add('fadeIn2');
+    }
 });
 
 </script>
