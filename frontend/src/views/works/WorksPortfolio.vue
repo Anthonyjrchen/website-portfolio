@@ -17,7 +17,7 @@ function startDisappear() {
 </script>
 <template>
     <div class="portfolioWrap flex flex-col items-center justify-center">
-        <img :src="portfolio" width="1200" class="shadow-sidebar-gray shadow-sm">
+        <img :src="portfolio" class="shadow-sidebar-gray shadow-sm w-[70vw]">
         <div class="text-5xl nameCardTitle mt-[50px] w-[1200px] text-light-teal">
             Portfolio page
         </div>
@@ -36,6 +36,12 @@ function startDisappear() {
                         <td class="nameCardTitle text-2xl text-light-teal align-top">Year</td>
                         <td class="text-xl align-top">
                             <h1>2025</h1>
+                        </td>
+                    </tr>
+                    <tr class=""> 
+                        <td class="nameCardTitle text-2xl text-light-teal align-top">Tech Stack</td>
+                        <td class="text-xl align-top">
+                            <h1>Vue.JS</h1>
                         </td>
                     </tr>
                 </tbody>

@@ -236,6 +236,11 @@
   animation-delay: 1s;
 }
 
+.fadeIn3 {
+  animation: fadeInAnimation 1s;
+  animation-fill-mode: forwards;
+}
+
 .fadeOut {
   animation: fadeOutAnimation 1s;
   animation-fill-mode: forwards;
