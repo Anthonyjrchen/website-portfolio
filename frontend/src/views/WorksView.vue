@@ -27,7 +27,7 @@ onBeforeRouteUpdate(async (to,from)=> {
     }
     if(to.path=='/works') {
         console.log("Entering works");
-        window.location.href="http://localhost:5173/works";
+        window.location.href="https://anthony-chen.com/works";
         // try {
         //     showWorks.value = false;
         //     document.getElementById('initialDisplay').classList.remove('fadeOut');
